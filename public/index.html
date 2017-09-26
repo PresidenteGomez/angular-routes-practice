@@ -12,31 +12,35 @@
     <script src="scripts/controllers/chapulin.controller.js"></script>
     <script src="scripts/controllers/goku.controller.js"></script>
     <script src="scripts/controllers/ranger.controller.js"></script>
-
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <title>Besties</title>
 </head>
 
 <body ng-app="myApp">
-    <nav>
-        <ul>
-
-            <li>
-                <a href="#!/">Home</a>
-            </li>
-            <li>
-                <a href="#!/goku">Goku</a>
-            </li>
-            <li>
-                <a href="#!/ranger">Power Rangers</a>
-            </li>
-            <li>
-                <a href="#!/chapulin">El Chapulin Colorado</a>
-            </li>
-
-        </ul>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#!/">
+            <!-- <img src="https://images-na.ssl-images-amazon.com/images/I/51C4mKiLU3L._SL500_AC_SS350_.jpg" width="30" height="30" alt=""> -->
+            Home
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#!/goku">Goku <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/ranger">Power Rangers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/chapulin">El Chapulin Colorado</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-<ng-view></ng-view>
+    <ng-view></ng-view>
 
 </body>
 
