@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/PresidenteGomez/angular-routes-practice#readme",
   "dependencies": {
+    "angular": "^1.6.6",
     "angular-route": "^1.6.6",
     "express": "^4.15.5"
   }
