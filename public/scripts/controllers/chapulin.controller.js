@@ -1,4 +1,7 @@
-myApp.controller('ChapulinController', function () {
-    console.log('in Chapulin Controller!');
+myApp.controller('ChapulinController', function (ThingService) {
+    console.log('in Chapulin Controller!', chapulinThings.chapulinThings);
+
+
+
 
 })

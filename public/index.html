@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,32 +12,35 @@
     <script src="scripts/controllers/chapulin.controller.js"></script>
     <script src="scripts/controllers/goku.controller.js"></script>
     <script src="scripts/controllers/ranger.controller.js"></script>
+    <script src="scripts/services/character.service.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Besties</title>
 </head>
 
-<body ng-app="myApp">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#!/">
-            <!-- <img src="https://images-na.ssl-images-amazon.com/images/I/51C4mKiLU3L._SL500_AC_SS350_.jpg" width="30" height="30" alt=""> -->
-            Home
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#!/goku">Goku <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/ranger">Power Rangers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/chapulin">El Chapulin Colorado</a>
-                </li>
-            </ul>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <a class="navbar-brand" href="#!">The Besties</a>
         </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#!/goku">Goku</a></li>
+            <li><a href="#!/ranger ">Power Rangers</a></li>
+            <li><a href="#!/chapulin">El Chapulin Colorado</a></li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.youtube.com/watch?v=4uPdylzQApc"><span class="glyphicon glyphicon-music"></span>DBZ Theme Song</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-tree-deciduous"></span> Login</a></li>
+        </ul> -->
+    </div>
+    </div>
     </nav>
 
     <ng-view></ng-view>
@@ -45,3 +48,7 @@
 </body>
 
 </html>
+
+
+
+<!-- <img src="https://images-na.ssl-images-amazon.com/images/I/51C4mKiLU3L._SL500_AC_SS350_.jpg" width="30" height="30" alt=""> -->
